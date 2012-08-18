@@ -16,6 +16,9 @@ if [ ! -d "$AUTOSNAPDIR" ]; then
 	exit 2
 fi
 
+# Change to the directory we're running from.
+cd "$(dirname "$0")"
+
 # Start the renamer.
 AUTOSNAPRNIN="$AUTOSNAPDIR/incoming" ./autosnap-renamer.sh
 
