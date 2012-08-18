@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 todaydir="$(date +%Y/%m/%d)"
 
