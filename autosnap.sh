@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Output directory.
-outdir="$HOME/Dropbox/autosnap/incoming"
+outdir="${1:-$HOME/Dropbox/autosnap/incoming}"
 
 # Helps finding a Homebrew-installed imagesnap.
 PATH="$PATH:/usr/local/bin"
