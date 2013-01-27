@@ -49,4 +49,4 @@ sed \
 echo "$currentfile" > lastfile.txt
 
 # rsync all that stuff over.
-rsync -rtl ./ scy@eridanus.uberspace.de:www/scytale.name/proj/oipd13
+rsync -4rtl --del ./ scy@eridanus.uberspace.de:www/scytale.name/proj/oipd13
