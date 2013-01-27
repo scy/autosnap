@@ -36,4 +36,4 @@ AUTOSNAPRNIN="$AUTOSNAPDIR/incoming" ./autosnap-renamer.sh
 AUTOSNAPMVFROM="$AUTOSNAPDIR/incoming" AUTOSNAPMVTO="$ARCHDIR" ./autosnap-mover.sh
 
 # Start the rsyncer.
-AUTOSNAPSYNCFROM="$ARCHDIR" AUTOSNAPSYNCTO="$AUTOSNAPDIR/today" ./autosnap-rsyncer.sh
+AUTOSNAPSYNCFROM="$ARCHDIR" AUTOSNAPSYNCTO="$AUTOSNAPDIR/today" OIPD13DIR="$(dirname "$0")/oipd13" ./autosnap-rsyncer.sh
