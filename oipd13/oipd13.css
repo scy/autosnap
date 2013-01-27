@@ -38,6 +38,7 @@ figure {
 
 figure img {
 	max-width: 100%;
+	max-height: 640px;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
