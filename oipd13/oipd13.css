@@ -1,0 +1,73 @@
+body {
+	background-color: #eee;
+	font-family: "Titillium Web", sans-serif;
+	color: #111;
+	margin: 0;
+	padding: 10px 5px 50px 5px;
+}
+
+#container {
+	width: 100%;
+	min-width: 480px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin: 0 0 10px 0;
+	background-image: url('http://scytale.name/style/07/scytale.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+	min-width: 200px;
+	min-height: 48px;
+}
+
+header h2 {
+	margin: 0 0 20px 0;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 80%;
+	color: #555;
+}
+
+figure {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+figure img {
+	max-width: 100%;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+article p {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	padding: 10px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.twocol {
+	width: 45%;
+}
+
+#about-scy, #about-today {
+	float: left;
+}
+
+#about-oipd13, #about-why {
+	float: right;
+}
+
+footer {
+	clear: both;
+	border-top: 1px solid #ccc;
+	padding-top: 50px;
+	font-size: 70%;
+	color: #666;
+}
