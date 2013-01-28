@@ -3,6 +3,9 @@
 OIPD13DIR="$(dirname "$0")"
 TODAYDIR="$1"
 
+# Don't do anything if it's not the #oipd13.
+[ "$(date +%Y-%m-%d)" = '2013-01-28' ] || exit 0
+
 cd "$OIPD13DIR"
 
 # Which file was the current one last time we ran?
