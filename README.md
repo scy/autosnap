@@ -1,7 +1,7 @@
 # autosnap: automatically take pictures of yourself
 This is a self-documentation, post-privacy, psychology and art project by [@scy][twitter].
 
-The code here contains the scripts and tools I use to let several of my devices (laptops, mobile phones, tablets) shoot photos of myself in regular intervals. These photos are then uploaded to The Cloud™.
+The code here contains the scripts and tools I used to let several of my devices (laptops, mobile phones, tablets) shoot photos of myself in regular intervals. These photos were then uploaded to The Cloud™.
 
 I held a (German) talk about the project and its psychological implications at the #spack1 in 2012: [Le panoptique, c’est moi][lpcm]. The recordings are not yet available, but [my presentation notes][lpcm-notes] are.
 
@@ -16,8 +16,13 @@ In short: As an experiment. How does it feel to have photos taken everywhere you
 
 Long story: Read [my talk description][lpcm], but it’s in German only.
 
+## Project status
+Since March 2013, I am no longer developing or maintaining autosnap, as my experiment has ended. It was an interesting experience, and if I find the time, I’ll possibly write something about it.
+
+I _may_ support you if you have questions, issues and, most importantly, are interested in becoming the new maintainer of this project, but I don’t feel obliged to. If I don’t feel like solving your problem or helping you out, you’re on your own. Sorry, but I have other things to do.
+
 ## What do I need?
-autosnap is flexible. Feel free to implement your own methods and maybe send me patches.
+autosnap is flexible. Feel free to implement your own methods and maybe send me patches. But please note that autosnap is no longer actively maintained or under development. If you want to take over the project, contact me.
 
 What you most definitely need: Something that shoots photos of yourself. The code currently supports Android devices running [Tasker][tasker] and [FolderSync][foldersync] (both are paid apps) as well as Macs running [imagesnap][] and Linux boxes with [fswebcam][].
 
@@ -44,21 +49,21 @@ In the following examples, `$HOME/autosnap` always means the directory where thi
 ### The maintenance machine
 The maintenance machine should optimally be running 24/7. It takes the photos from the incoming folder, renames them, puts them into the correct output folder and maintains the “today” folder.
 
-On my Mac mini, the following cron does that:
+On my Mac mini, the following cron did that:
 
     * * * * * "$HOME/autosnap/run-autosnap-maintenance.sh" "$HOME/Dropbox/autosnap" "$HOME/Google Drive/autosnap" > /tmp/autosnap.log 2>&1
 
 Parameters are the input directory (`/incoming` will be appended) and, if you want to, an output directory (the `YYYY/MM/DD` subdirectories will be created there). Else, the input directory is used as output directory as well (which works fine, because input will be in `incoming` and output in the date-based directories).
 
 ### A Mac/Linux laptop
-On these machines, [imagesnap][] (in [Homebrew][homebrew]) or [fswebcam][] are used to take photos and put them into an output directory. I’m using the following cron:
+On these machines, [imagesnap][] (in [Homebrew][homebrew]) or [fswebcam][] were used to take photos and put them into an output directory. I was using the following cron:
 
     */10 * * * * "$HOME/autosnap/autosnap.sh" "$HOME/Dropbox/autosnap/incoming" >/dev/null 2>&1
 
 The parameter is the directory where the files should be put in.
 
 ### An Android mobile phone or tablet
-On these machines, I use a [Tasker][tasker] script to capture the images and [FolderSync][foldersync] to throw them into Dropbox.
+On these machines, I used a [Tasker][tasker] script to capture the images and [FolderSync][foldersync] to throw them into Dropbox.
 
 The tasker script is included in this repository as `autosnap.tsk.xml`.
 
