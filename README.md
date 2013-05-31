@@ -24,7 +24,7 @@ I _may_ support you if you have questions, issues and, most importantly, are int
 ## What do I need?
 autosnap is flexible. Feel free to implement your own methods and maybe send me patches. But please note that autosnap is no longer actively maintained or under development. If you want to take over the project, contact me.
 
-What you most definitely need: Something that shoots photos of yourself. The code currently supports Android devices running [Tasker][tasker] and [FolderSync][foldersync] (both are paid apps) as well as Macs running [imagesnap][] and Linux boxes with [fswebcam][].
+What you most definitely need: Something that shoots photos of yourself. The code currently supports Android devices running [Tasker][tasker] and [FolderSync][foldersync] (both are paid apps) as well as Macs running [imagesnap][] and Linux boxes with [fswebcam][] or [mplayer][].
 
 The scripts simply put files into folders or take them from there, all the cloud stuff is done by third party software: FolderSync or the Dropbox or Google Drive clients.
 
@@ -99,3 +99,4 @@ If you need more information, the code isn’t too hard to read. Alternatively, 
 [homebrew]:   http://mxcl.github.com/homebrew/
 [tasker]:     http://tasker.dinglisch.net/
 [foldersync]: http://www.tacit.dk/foldersync
+[mplayer]:    http://mplayerhq.hu
